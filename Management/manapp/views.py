@@ -5,9 +5,9 @@ from django.http import HttpResponse
 
 
 def home(request):
-    return HttpResponse('Home View')
+    return render(request, 'manapp/dashboard.html')
 def products(request):
-    return HttpResponse('Products View')
+    return render(request, 'manapp/products.html')
 def customer(request):
-    return HttpResponse('Customer View')
+    return render(request, 'manapp/customers.html')
     
